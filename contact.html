@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Khushboo Jain(006) , Yash Khatod(011)">
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="js/bootstrap.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="hcss.css">
+ <style>
+body {
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #151B54;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+<body>
+
+<!-- Navigation -->
+
+<div class="tnav" id="mT">
+  <img src="img/lo.png" style="height: 70px; float: left; ">
+  <a href="home.html" style="height: 70px; margin-right: 2px;" class="active">Home</a>
+  <a href="package1.html">Package</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="about.html">About</a>
+  <a onclick="document.getElementById('log').style.display='block'" style="width:auto;">Login</a>
+</div>
+
+
+<!-- Slide Show -->
+<section>
+  <img class="slides" src="img/f.jpg"
+  style="width:100%">
+  <img class="slides" src="img/pb.jpg"
+  style="width:100%">
+  <img class="slides" src="img/pf.jpg"
+  style="width:100%">
+</section>
+
+<!-- Band Description -->
+<section style="max-width:100%">
+  <center><h2>MUSAFIR</h2></center>
+</section>
+
+<!-- Social Bar -->
+<div class="ib">
+  <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="https://www.twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="https://www.google.com/" class="google"><i class="fa fa-google"></i></a> 
+  <a href="https://www.linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
+<!-- description -->
+<center>
+  <div class="container">
+    <div style="text-align:center">
+      <h2><p style="margin-left: 500px; ">Contact Us</p></h2>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="img/co.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <form>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+          </select>
+          <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</center>
+
+<!-- Members -->
+<center>
+<br><br>
+  <div class="container">
+    <h1 style="padding: 20px;">Our Team</h1>
+    <div class="card">
+      <img src="img/yash.png" alt="Yash Khatod" style="width:30%">
+      <div class="contain">
+        <h4><b>Yash Khatod</b></h4> 
+        <p><b>Roll No. :- 19MCA011</b></p> 
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/khushboo.png" alt="Khushboo Jain" style="width:30%">
+      <div class="contain">
+        <h4><b>Khushboo Jain</b></h4> 
+        <p><b>Roll No. :- 19MCA006</b></p> 
+      </div>
+    </div>
+  </div>
+</center>
+
+
+
+<!-- Footer -->
+<br><br><br>
+<div>
+  <footer class="footer">
+    <div class="footer_top section_gap_top">
+    <div class="copyright">
+      <div >
+        <div class="row">
+          <div class="col-lg-5 col-md-12">
+            
+            <br>
+            <p style="color: white; padding: 20px;">Copyright &copy; 2019 All rights reserved | This website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <br>YASH KATHOD & KHUSHBOO JAIN</a></p>
+          </div>
+          <div class="col-lg-5 col-md-12 text-right">
+              <h5 class="footer_title">Navigation Links</h5>
+              <div class="row">
+                <div class="col-5">
+                  <ul class="list">
+                    <li><a href="#">Home</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var mi = 0;
+car();
+
+function car() {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  mi++;
+  if (mi > x.length) {mi = 1}
+  x[mi-1].style.display = "block";
+  setTimeout(car, 3000);
+}
+
+//navigation bar
+function mf() {
+  var x = document.getElementById("mT");
+  if (x.className === "tnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "tnav";
+  }
+}
+
+
+// login
+var mo = document.getElementById('log');
+window.onclick = function(event) {
+    if (event.target == mo) {
+        mo.style.display = "none";
+    }
+}
+
+
+
+// jq
+$(document).ready(function(){
+  $("p").click(function(){
+    alert("WELCOME TO CONTACT US PAGE!!");
+  });
+});
+
+
+</script>
+
+
+</body>
+</html>
+
